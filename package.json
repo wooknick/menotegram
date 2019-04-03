@@ -1,0 +1,25 @@
+{
+    "name": "menotegram",
+    "version": "1.0.0",
+    "description": "Instagram clone with Express + Prisma + React and React Native",
+    "main": "index.js",
+    "repository": "https://github.com/wooknick/menotegram.git",
+    "author": "Minwook Park <wooknick.public@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@babel/core": "^7.4.3",
+        "@babel/node": "^7.2.2",
+        "@babel/preset-env": "^7.4.3",
+        "dotenv": "^7.0.0",
+        "graphql-tools": "^4.0.4",
+        "graphql-yoga": "^1.17.4",
+        "merge-graphql-schemas": "^1.5.8",
+        "morgan": "^1.9.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.10"
+    },
+    "scripts": {
+        "dev": "nodemon --exec babel-node src/server.js"
+    }
+}

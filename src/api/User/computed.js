@@ -20,6 +20,9 @@ export default {
             const { user } = request;
             const { id: parentId } = parent;
             return user.id === parentId;
+        },
+        posts: parent => {
+            return prisma.user({ id: parent.id }).posts();
         }
     }
 };

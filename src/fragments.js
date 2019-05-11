@@ -12,6 +12,7 @@ export const USER_FRAGMENT = `
 fragment UserParts on User{
     id
     username
+    avatar
 }`;
 
 export const FILE_FRAGMENT = `
@@ -48,5 +49,21 @@ fragment RoomParts on Room{
     id
     participants{
         id
+        username
+        avatar
+    }
+    messages{
+        id
+        text
+        to{
+            id
+            username
+            avatar
+        }
+        from{
+            id
+            username
+            avatar
+        }
     }
 }`;

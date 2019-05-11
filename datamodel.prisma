@@ -1,5 +1,6 @@
 type User {
     id: ID! @id
+    avatar: String
     updatedAt: DateTime! @updatedAt
     createdAt: DateTime! @createdAt
     username: String! @unique
@@ -58,7 +59,7 @@ type Room {
     updatedAt: DateTime! @updatedAt
     createdAt: DateTime! @createdAt
     participants: [User!]!
-    messagges: [Message!]!
+    messages: [Message!]!
 }
 
 type Message {

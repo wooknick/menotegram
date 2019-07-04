@@ -11,7 +11,7 @@ export default {
                     where: {
                         id: user.id
                     },
-                    data: { loginSecre: "" }
+                    data: { loginSecret: "" }
                 });
                 return generateToken(user.id);
             } else {

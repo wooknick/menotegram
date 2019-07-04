@@ -68,6 +68,6 @@ type Message {
     createdAt: DateTime! @createdAt
     text: String!
     from: User! @relation(name: "From")
-    to: User! @relation(name: "To")
+    to: User! @relation(name: "To", onDelete: CASCADE)
     room: Room!
 }

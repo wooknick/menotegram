@@ -62,7 +62,6 @@ typings/
 
 # prisma output
 generated
-prisma.yml
 
 # production
 build/

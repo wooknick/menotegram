@@ -12,6 +12,7 @@ export default {
                 user: { connect: { id: user.id } }
             });
             files.forEach(async file => {
+                console.log("file : " + file);
                 await prisma.createFile({
                     url: file,
                     post: {

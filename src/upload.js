@@ -12,6 +12,7 @@ const upload = multer({
     storage: multerS3({
         s3: s3,
         bucket: "menotegram",
+        acl: "public-read",
         metadata: function(req, file, cb) {
             cb(null, { fieldName: file.fieldname });
         },
@@ -27,6 +28,5 @@ export const uploadController = (req, res, next) => {
     const {
         file: { location }
     } = req;
-    console.log(file);
     res.json({ location });
 };

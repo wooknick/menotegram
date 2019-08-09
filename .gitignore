@@ -59,5 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# prisma output
 generated
 prisma.yml
+
+# production
+build/
